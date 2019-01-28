@@ -2,7 +2,7 @@ class User < ApplicationRecord
   attr_reader :password
   validates :password, length: {minimum: 6, allow_nil: true  }
   validates :username, :password_digest, :email, :session_token, presence: true, uniqueness: true
-  validates :first_name, :last_name, presence: true;
+ 
   
   def password=(password)
     @password = password
