@@ -1,5 +1,5 @@
 class Mutations::Login < GraphQL::Function
-    argument :username !Types::AuthLogin
+    argument :username !Types::Login
     
     type Types::AuthenticateType
     
