@@ -1,5 +1,4 @@
-module Types
-  class QueryType < Types::BaseObject
+class Types::QueryType < Types::BaseObject
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
@@ -9,5 +8,5 @@ module Types
     def test_field
       "Hello World!"
     end
-  end
+  
 end

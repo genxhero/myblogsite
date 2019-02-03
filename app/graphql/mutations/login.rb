@@ -1,7 +1,7 @@
-class Mutations::Login < GraphQL::Function
-    argument :username !Types::Login
+class Mutations::Login 
+    argument :username !Types::LoginType
     
-    type Types::AuthenticateType
+    type Types::LoginType
     
     def call(obj, args, ctx)
         input = args[:username]

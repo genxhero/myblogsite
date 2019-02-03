@@ -1,5 +1,5 @@
 Types::UserType = GraphQL::ObjectType.define do
-    name 'User'
+    graphql_name 'User'
     field :id !types.Int
     field :username, !types.String
     field :email, !types.String

@@ -1,7 +1,7 @@
-module Types
-    class Login < BaseInputObject
-      graphql_name 'LOGIN'
+
+
+class Types::LoginType < Types::BaseInputObject
+      graphql_name 'Login'
       argument :username, String, required: true
       argument :password, String, required: true
-    end
-  end
+end

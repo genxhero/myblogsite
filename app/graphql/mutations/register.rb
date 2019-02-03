@@ -1,5 +1,5 @@
-class Mutations::Register < GraphQL::Function
+class Mutations::Register
     class RegistrationData < Types::BaseInputObject
-        argument :username, Types::Register, required: false
+        argument :username, !Types::RegisterType, required: false
       end
 end
